@@ -8,7 +8,7 @@
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7">
             <div class="mb-4">
-              <h3 class="title" >Se connecter</h3>
+              <h3 class="title" >Réinitialisation</h3>
             </div>
             <br/>
             <form action="#" method="post">
@@ -16,25 +16,7 @@
                 <label class="labeling" for="password">Email</label>
                 <input type="email" class="form-control" id="password">   
               </div>
-              <div class="form-group last mb-3">
-                <label class="labeling" for="password">Mot de passe</label>
-                <input type="password" class="form-control" id="password">   
-              </div>
-
-                  <div class="row">
-                    <div class="col-sm-6">
-                       <input style="display: inline;float: inherit;" type="checkbox" value="lsRememberMe" id="rememberMe">
-                        <label style="color:#6C63FF!important; padding-left: 5px;" for="rememberMe">Se souvenir de moi</label>
-                      
-                    </div>
-                    <div class="col-sm-6">
-                      <a v-on:click="forgot()" style="color:#6C63FF; text-decoration:non!Important;" href="">
-                        Mot de passe oublié ?
-                      </a>
-                    </div>
-              </div>
-          
-              <input type="submit" value="Connexion" v-on:click="login()" class="btn btn-block btn-primary">
+              <input type="submit" value="Réinitialisation" v-on:click="login()" class="btn btn-block btn-primary">
             </form>
           </div>
         </div>
@@ -45,19 +27,16 @@
 
 <script>
 export default {
-  name: 'Login',
+  name: 'FortgotPassword',
   props: {
     msg: String
   },
   methods: {
-    //redirect to dashboard
+    //redirect to login
         login(){
-            this.$router.push('rapportv');
+            this.$router.push('login');
         },
-        //redirect to forgot page
-        forgot(){
-            this.$router.push('forgot');
-        }
+       
   }
 }
 </script>
@@ -110,14 +89,10 @@ export default {
         margin-bottom: -40px;
         font-family: "Nunito", Extra-bold!important;
         text-align: center;
-        font-size: 60px;
+        font-size: 40px;
         font-weight: 900!important;
         color:#6C63FF!important;
         margin-left: 25px;
     }
-    .half a {
-    color: #888;
-    text-decoration: none !important;
-}
 
 </style>

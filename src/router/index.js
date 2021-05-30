@@ -1,9 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
 //import Home from '../views/Home.vue'
 import Login from '../../src/components/Login.vue'
-import Home from '../../src/components/Home.vue'
 import Welcome from '../../src/components/Welcome.vue'
 import Register from '../../src/components/Register.vue'
+
+import ForgotPassword from '../../src/components/ForgotPassword.vue'
+import RapportVisiteur from '../../src/components/RapportVisiteur.vue'
+import Praticiens from '../../src/components/Praticiens.vue'
+import RapportsRh from '../../src/components/RapportsRh.vue'
+import ListVisiteurs from '../../src/components/ListVisiteurs.vue'
+import NouveauRapport from '../../src/components/NouveauRapport.vue'
+import EditRapport from '../../src/components/EditRapport.vue'
+import RapportRh from '../../src/components/RapportRh.vue'
+import NouveauVisiteur from '../../src/components/NouveauVisiteur.vue'
+import EditVisiteur from '../../src/components/EditVisiteur.vue'
+import ModifyRapport from '../../src/components/ModifyRapport.vue'
+import Account from '../../src/components/Account.vue'
 
 const routes = [
   {
@@ -11,9 +23,39 @@ const routes = [
     component: Welcome
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: Home
+    path: '/accountedit',
+    name: 'EditVisiteur',
+    component: EditVisiteur
+  },
+  {
+    path: '/account',
+    name: 'Account',
+    component: Account
+  },
+  {
+    path: '/modifyrapport',
+    name: 'ModifyRapport',
+    component: ModifyRapport
+  },
+  {
+    path: '/newrapport',
+    name: 'NouveauRapport',
+    component: NouveauRapport
+  },
+  {
+    path: '/editrapport',
+    name: 'EditRapport',
+    component: EditRapport
+  },
+  {
+    path: '/users',
+    name: 'ListVisiteurs',
+    component: ListVisiteurs
+  },
+  {
+    path: '/newaccount',
+    name: 'NouveauVisiteur',
+    component: NouveauVisiteur
   },
   {
     path: '/welcome',
@@ -26,9 +68,34 @@ const routes = [
     component: Login
   },
   {
+    path: '/forgot',
+    name: 'ForgotPassword',
+    component: ForgotPassword
+  },
+  {
+    path: '/rapportv',
+    name: 'RapportVisiteur',
+    component: RapportVisiteur
+  },
+  {
+    path: '/praticiens',
+    name: 'Praticiens',
+    component: Praticiens
+  },
+  {
     path: '/register',
     name: 'Register',
     component: Register
+  },
+  {
+    path: '/rapportsrh',
+    name: 'RapportsRh',
+    component: RapportsRh
+  },
+  {
+    path: '/rapportrh',
+    name: 'RapportRh',
+    component: RapportRh
   },
   {
     path: '/about',

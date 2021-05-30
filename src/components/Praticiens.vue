@@ -13,60 +13,39 @@
                     <div>
                         <ul class="mt-6 leading-10">
                             <li class="relative px-2 py-1 ">
-                                <a class="inline-flex  w-full text-sm font-semibold text-white transition-colors duration-150 cursor-pointer hover:text-green-500" 
+                                <a v-on:click="rapportv()" class="inline-flex  w-full text-sm font-semibold text-white transition-colors duration-150 cursor-pointer hover:text-green-500" 
                                     href=" #">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g filter="url(#filter0_d)">
-                                        <path d="M10.9059 0H6.31281C5.03754 0 4 1.03754 4 2.31281V6.90594C4 8.18121 5.03754 9.21875 6.31281 9.21875H10.9059C12.1812 9.21875 13.2188 8.18121 13.2188 6.90594V2.31281C13.2188 1.03754 12.1812 0 10.9059 0ZM11.6562 6.90594C11.6562 7.31965 11.3196 7.65625 10.9059 7.65625H6.31281C5.8991 7.65625 5.5625 7.31965 5.5625 6.90594V2.31281C5.5625 1.8991 5.8991 1.5625 6.31281 1.5625H10.9059C11.3196 1.5625 11.6562 1.8991 11.6562 2.31281V6.90594Z" fill="#62608B"/>
-                                        <path d="M21.6562 0H17.125C15.8327 0 14.7812 1.05141 14.7812 2.34375V6.875C14.7812 8.16734 15.8327 9.21875 17.125 9.21875H21.6562C22.9486 9.21875 24 8.16734 24 6.875V2.34375C24 1.05141 22.9486 0 21.6562 0ZM22.4375 6.875C22.4375 7.30578 22.087 7.65625 21.6562 7.65625H17.125C16.6942 7.65625 16.3438 7.30578 16.3438 6.875V2.34375C16.3438 1.91297 16.6942 1.5625 17.125 1.5625H21.6562C22.087 1.5625 22.4375 1.91297 22.4375 2.34375V6.875Z" fill="#62608B"/>
-                                        <path d="M10.9059 10.7812H6.31281C5.03754 10.7812 4 11.8188 4 13.0941V17.6872C4 18.9625 5.03754 20 6.31281 20H10.9059C12.1812 20 13.2188 18.9625 13.2188 17.6872V13.0941C13.2188 11.8188 12.1812 10.7812 10.9059 10.7812ZM11.6562 17.6872C11.6562 18.1009 11.3196 18.4375 10.9059 18.4375H6.31281C5.8991 18.4375 5.5625 18.1009 5.5625 17.6872V13.0941C5.5625 12.6804 5.8991 12.3438 6.31281 12.3438H10.9059C11.3196 12.3438 11.6562 12.6804 11.6562 13.0941V17.6872Z" fill="#62608B"/>
-                                        <path d="M21.6562 10.7812H17.125C15.8327 10.7812 14.7812 11.8327 14.7812 13.125V17.6562C14.7812 18.9486 15.8327 20 17.125 20H21.6562C22.9486 20 24 18.9486 24 17.6562V13.125C24 11.8327 22.9486 10.7812 21.6562 10.7812ZM22.4375 17.6562C22.4375 18.087 22.087 18.4375 21.6562 18.4375H17.125C16.6942 18.4375 16.3438 18.087 16.3438 17.6562V13.125C16.3438 12.6942 16.6942 12.3438 17.125 12.3438H21.6562C22.087 12.3438 22.4375 12.6942 22.4375 13.125V17.6562Z" fill="#62608B"/>
-                                        </g>
-                                        <defs>
-                                        <filter id="filter0_d" x="0" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                                        <feOffset dy="4"/>
-                                        <feGaussianBlur stdDeviation="2"/>
-                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                                        </filter>
-                                        </defs>
-                                        </svg>
+                                    <img   svg-inline class="icon" src='../assets/img/svg/menu.svg' width="20" height="20"  alt="Praticiens" />  
                                     <span class="ml-1">Accueil</span>
                                 </a>
                             </li>
                             <li class="relative px-2 py-1 ">
-                                <a class="inline-flex  w-full text-sm font-semibold text-white transition-colors duration-150 cursor-pointer hover:text-green-500" 
+                                <a v-on:click="praticiens()" class="inline-flex  w-full text-sm font-semibold text-white transition-colors duration-150 cursor-pointer hover:text-green-500" 
                                     href=" #">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10 0C7.09223 0 4.72656 2.36566 4.72656 5.27344C4.72656 8.18121 7.09223 10.5469 10 10.5469C12.9078 10.5469 15.2734 8.18121 15.2734 5.27344C15.2734 2.36566 12.9078 0 10 0ZM10 9.375C7.7384 9.375 5.89844 7.53504 5.89844 5.27344C5.89844 3.01184 7.7384 1.17188 10 1.17188C12.2616 1.17188 14.1016 3.01184 14.1016 5.27344C14.1016 7.53504 12.2616 9.375 10 9.375Z" fill="#9B9DB1"/>
-                                        <path d="M11.6341 11.7578H8.36586C5.66266 11.7578 2.99488 13.0059 1.21094 15.682V20H18.7891V15.682C17.0077 13.0098 14.3407 11.7578 11.6341 11.7578ZM17.6172 18.8281H17.6172H2.38281V16.0405C3.75121 14.0892 5.97469 12.9297 8.3659 12.9297H11.6341C14.0254 12.9297 16.2488 14.0892 17.6172 16.0405V18.8281Z" fill="#9B9DB1"/>
-                                        </svg>                                        
+                                     <img   svg-inline class="icon" src='../assets/img/svg/user-1.svg' width="20" height="20"  alt="Praticiens" />  
                                     <span  class="ml-1">Praticiens</span>
                                     
                                 </a>
                             </li>
                             <li class="relative px-2 py-1 ">
-                                <a class="inline-flex  w-full text-sm font-semibold text-white transition-colors duration-150 cursor-pointer hover:text-green-500" 
+                                <a v-on:click="rapportv()" class="inline-flex  w-full text-sm font-semibold text-white transition-colors duration-150 cursor-pointer hover:text-green-500" 
                                     href=" #">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0)">
-                                        <path d="M8.32256 9.83659H0.33348C0.149416 9.83659 0 9.98601 0 10.1701C0 10.3541 0.149416 10.5036 0.33348 10.5036H8.32256C8.50697 10.5036 8.65604 10.3541 8.65604 10.1701C8.65604 9.98597 8.50666 9.83659 8.32256 9.83659Z" fill="#3A3858"/>
-                                        <path d="M16.7038 6.80894C14.6963 4.79907 12.4056 3.5005 10.8679 3.5005C10.3304 3.5005 9.90253 3.65558 9.59671 3.96203C8.40154 5.15822 9.65073 8.28322 12.4403 11.0761C14.4478 13.086 16.7384 14.3845 18.2761 14.3845C18.814 14.3845 19.2419 14.2291 19.5476 13.923C20.7425 12.7268 19.4933 9.60183 16.7038 6.80894ZM19.0758 13.4518C18.8994 13.6282 18.6303 13.7176 18.2761 13.7176C16.9279 13.7176 14.772 12.4667 12.9122 10.6049C10.2577 7.94747 9.28295 5.21963 10.0683 4.43329C10.2447 4.25688 10.5138 4.1675 10.8679 4.1675C12.2165 4.1675 14.3721 5.41838 16.2319 7.28016C18.8864 9.93765 19.8611 12.6655 19.0758 13.4518Z" fill="#3A3858"/>
-                                        <path d="M19.5474 13.4515C19.417 13.3214 19.2059 13.3211 19.0758 13.4518C18.8994 13.6282 18.6303 13.7176 18.2762 13.7176C16.9279 13.7176 14.772 12.4667 12.9122 10.605C10.2577 7.94751 9.28299 5.21967 10.0683 4.43333C10.1983 4.30294 10.1983 4.09184 10.068 3.9618C9.93756 3.83176 9.72647 3.83141 9.59643 3.96215C9.59611 3.9625 9.59541 3.96317 9.59475 3.96383L7.46382 6.09706C6.26897 7.29325 7.5182 10.4182 10.3077 13.2111C12.3726 15.278 14.6332 16.4995 16.1526 16.4995C16.6508 16.4995 17.0696 16.3681 17.3754 16.092C17.3891 16.0817 17.4024 16.0707 17.4148 16.058L19.5477 13.9231C19.6778 13.7926 19.6778 13.5815 19.5474 13.4515ZM16.9712 15.559C16.9626 15.5657 16.9542 15.5734 16.9459 15.581C16.1442 16.355 13.4147 15.378 10.7796 12.7401C8.12508 10.0827 7.15034 7.35485 7.93567 6.56851L9.14685 5.35564C9.21353 6.86762 10.4251 9.05858 12.4403 11.0764C14.3924 13.0306 16.6124 14.3125 18.147 14.3818L16.9712 15.559Z" fill="#3A3858"/>
-                                        <path d="M19.548 13.4518L10.0686 3.96208C9.93859 3.83168 9.7275 3.83168 9.59711 3.96176C9.46671 4.0918 9.46671 4.3029 9.59675 4.43329L19.0758 13.923C19.1412 13.9881 19.2266 14.0207 19.3119 14.0207C19.3973 14.0207 19.4823 13.9884 19.5477 13.9233C19.6781 13.7933 19.6781 13.5822 19.548 13.4518Z" fill="#3A3858"/>
-                                        <path d="M10.3578 12.3003C8.77108 10.5896 7.74365 8.74678 7.67661 7.49157C7.66728 7.31715 7.52521 7.17977 7.35079 7.17579L7.24508 7.17313C7.16504 7.17079 7.08469 7.16879 7.00297 7.16879C3.07597 7.16879 0 8.48701 0 10.1701C0 11.8531 3.07597 13.1714 7.00301 13.1714C8.11982 13.1714 9.1896 13.0643 10.1827 12.8532C10.3001 12.8285 10.3948 12.7422 10.4311 12.6278C10.4675 12.5134 10.4395 12.3883 10.3578 12.3003ZM7.00301 12.5044C3.26906 12.5044 0.666961 11.2742 0.666961 10.1701C0.666961 9.06593 3.26906 7.83575 7.00301 7.83575C7.01602 7.83575 7.02934 7.83575 7.04204 7.83575C7.22712 9.0953 8.12349 10.745 9.47074 12.3087C8.6894 12.4371 7.84736 12.5044 7.00301 12.5044Z" fill="#3A3858"/>
-                                        <path d="M12.7092 14.3812C12.0446 13.9097 11.3949 13.3575 10.7783 12.7402C10.6329 12.5944 10.4935 12.4477 10.3568 12.3003C10.2771 12.2143 10.1577 12.1763 10.043 12.201C9.10894 12.3994 8.05748 12.5044 7.00204 12.5044C3.26809 12.5044 0.665984 11.2742 0.665984 10.1701C0.665984 9.98605 0.516569 9.83664 0.332504 9.83664C0.148439 9.83664 -0.000976562 9.98605 -0.000976562 10.1701V13.1714C-0.000976562 14.8545 3.075 16.1727 7.00204 16.1727C9.25968 16.1727 11.3846 15.7118 12.6861 14.9398C12.7832 14.8821 12.8445 14.7794 12.8492 14.6667C12.8539 14.554 12.8012 14.4466 12.7092 14.3812ZM7.00208 15.5057C3.26812 15.5057 0.666023 14.2755 0.666023 13.1714V11.47C1.77748 12.4848 4.16817 13.1714 7.00208 13.1714C8.04986 13.1714 9.05597 13.0773 9.99668 12.8916C10.0977 12.9986 10.2008 13.1053 10.3068 13.2114C10.8157 13.7209 11.3469 14.1885 11.8908 14.6057C10.6716 15.1739 8.89354 15.5057 7.00208 15.5057Z" fill="#62608B"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0">
-                                        <rect width="20" height="20" fill="white"/>
-                                        </clipPath>
-                                        </defs>
-                                        </svg>                                        
-                                    <span class="ml-1">Médicaments</span>
+                                    <img   svg-inline class="icon" src='../assets/img/svg/contract.svg' width="20" height="20"  alt="Praticiens" />                                         
+                                    <span class="ml-1">Rapports</span>
+                                </a>
+                            </li>
+                             <li class="relative px-2 py-1 ">
+                                <a v-on:click="account()" class="inline-flex  w-full text-sm font-semibold text-white transition-colors duration-150 cursor-pointer hover:text-green-500" 
+                                    href=" #">
+                                    <img   svg-inline class="icon" src='../assets/img/svg/user_ico.svg' width="20" height="20"  alt="Praticiens" />                                        
+                                    <span class="ml-1">Mon compte</span>
+                                </a>
+                            </li>
+                             <li class="relative px-2 py-1 ">
+                                <a v-on:click="login()" class="inline-flex  w-full text-sm font-semibold text-white transition-colors duration-150 cursor-pointer hover:text-green-500" 
+                                    href=" #">
+                                    <img   svg-inline class="icon" src='../assets/img/svg/padlock.svg' width="20" height="20"  alt="Praticiens" />                                              
+                                    <span class="ml-1">Déconnexion</span>
                                 </a>
                             </li>
                         </ul>
@@ -91,7 +70,7 @@
                                    
                                 </div>
                             </div>
-                             <div class="col-span-2 mt-8">
+                             <div class="col-span-2 mt-4">
                                 <div class="flex items-right h-10 intro-y" style="margin-top:-30px;">
                                     <span  class="ml-1" >
                                                                         <div style="background:white!important;padding:10px;border-radius:20px;"  class="flex mt-3">
@@ -154,6 +133,7 @@
                             <div class="col-span-8 mt-5">
                                 <div class="grid gap-2 grid-cols-1 lg:grid-cols-1">
                                     <div class="bg-white p-4 shadow-lg rounded-lg" style="border-radius:20px!important;">
+                                        
                                         <h1 style="float: inline-start;color:#454562;font-size: 18px;">Eric Dampierre</h1><br/>
                                         <p style="float: inline-start;color:#454562;font-size: 14px;" class="text-gray-600 text-xs"> e.dampierre@ep-ccimp.com </p>
                                         <div style="color:black!important; padding:5px;border-radius:30px;background:#C4C4C4; float: right!important;margin-right: 25px !important; margin-top: -20px;" class="flex text-green-500">
@@ -223,9 +203,7 @@
                                                                                 <div class="active-tab">
                                                                                 <p class="font-semibold text-gray-700 text-sm capitalize" style="color:#454562;font-size: 14px;"> Profil </p>
                                                                                 </div>
-                                                                                <div class="tab">
-                                                                                <p class="font-semibold text-gray-700 text-sm capitalize" style="color:#454562;font-size: 14px;"> Rapport </p>
-                                                                                </div>
+                                                                               
                                                                           </div>
                                                                                             <div class="grid grid-cols-12 gap-6">
                                                                                                  <div class="col-span-4 mt-5">
@@ -281,7 +259,7 @@
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
-                                                                                            </div>
+                                                                 </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -303,9 +281,55 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Praticiens',
   props: {
   //  msg: String
+  },
+   methods: {
+    //redirect to dashboard
+        login(){
+            this.$router.push('login');
+        },
+        //redirect to forgot page
+        rapportv(){
+            this.$router.push('rapportv');
+        },
+         //redirect to account page if guest login ok
+        account(){
+            this.$router.push('account');
+        },
+         //redirect to accounts page if rh login ok
+        listaccount(){
+            this.$router.push('listaccount');
+        },
+         //redirect to accounts page if rh login ok
+        rapportrh(){
+            this.$router.push('rapportrh');
+        },
+        //redirect to praticiens page if  login ok
+        praticiens(){
+            this.$router.push('praticiens');
+        },
+        //redirect to praticiens page if guest login ok
+        accountedit(){
+            this.$router.push('accountedit');
+        },
+        //redirect to new account page if rh login ok
+         newaccount(){
+            this.$router.push('newaccount');
+        },
+        //redirect to edit rapport page if guest login ok
+         editrapport(){
+            this.$router.push('editrapport');
+        },
+        //redirect to rapport page if rh login ok
+         rapportitemrh(){
+            this.$router.push('editrapport');
+        },
+        //redirect to rapport page if guest login ok
+         rapportitemv(){
+            this.$router.push('editrapport');
+        },
   }
 }
 </script>
@@ -323,6 +347,9 @@ export default {
 .active-tab p{
  padding: 10px;
 }
+.ml-1 {
+    margin-left: 4rem!important;
+}
 .tab p{
  padding: 10px;
 }
@@ -339,5 +366,8 @@ export default {
 .border-gray-200 {
     --tw-border-opacity: 1;
     border-color: white;
+}
+.border-b {
+    border-bottom-width: 0px!important;
 }
 </style>
